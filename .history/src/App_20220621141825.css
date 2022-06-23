@@ -1,0 +1,32 @@
+.titles-block  {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+.title {
+  display: flex;
+  align-items: center;
+  
+}
+.title button {
+  height: 50%
+}
+.error {
+  border: red 1px solid;
+ }
+ 
+ .error-message {
+  color: red;
+ }
+ .active-filter {
+  background-color: black;
+}
+.is-done {
+  opacity: 0.5;
+}
