@@ -13,14 +13,32 @@ let startState: TasksStateType;
 beforeEach(() => {
   startState = {
     todolistId1: [
-      { id: "1", title: "CSS", isDone: false },
-      { id: "2", title: "JS", isDone: true },
-      { id: "3", title: "React", isDone: false },
+      {
+        addedDate: "2022-06-24T10:36:39.5573724Z",
+        deadline: "",
+        description: "",
+        id: "c245cd23-51fa-4512-9152-c9d4e5ddc151",
+        order: -2,
+        priority: 1,
+        startDate: "",
+        status: 0,
+        title: "1",
+        todoListId: "56989097-b942-40d8-a268-c7405789610c",
+      },
     ],
     todolistId2: [
-      { id: "1", title: "bread", isDone: false },
-      { id: "2", title: "milk", isDone: true },
-      { id: "3", title: "tea", isDone: false },
+      {
+        addedDate: "2022-06-24T10:36:39.5573724Z",
+        deadline: "",
+        description: "",
+        id: "c245cd23-51fa-4512-9152-c9d4e5ddc151",
+        order: -2,
+        priority: 1,
+        startDate: "",
+        status: 0,
+        title: "1",
+        todoListId: "56989097-b942-40d8-a268-c7405789610c",
+      },
     ],
   };
 });

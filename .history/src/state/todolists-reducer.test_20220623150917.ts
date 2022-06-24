@@ -1,3 +1,5 @@
+import { SetTodolistsAC } from "./../../.history/src/state/todolists-reducer_20220623144441";
+import { todolistsReducer } from "./../../.history/src/state/todolists-reducer_20220623145352";
 import { FilterValuesType } from "./../../.history/src/App_20220620181237";
 import { ToDoListType } from "./../../.history/src/App_20220621102428";
 import {
@@ -61,4 +63,11 @@ test("correct filter of todolist should be changed", () => {
 
   expect(endState[0].filter).toBe("all");
   expect(endState[1].filter).toBe(newFilter);
+});
+test("todolists must change", () => {
+  const todolists = [
+    { id: "1", title: "Hello", addedDate: "222222", order: 0 },
+  ];
+  const endState = todolistsReducer([], SetTodolistsAC(todolists));
+  expect(endState.length).toBe(2);
 });
