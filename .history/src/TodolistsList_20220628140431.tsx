@@ -14,6 +14,7 @@ import {
 import ToDoList from "./ToDoList";
 
 const TodolistsList = () => {
+  debugger;
   const todolists = useSelector<AppRootStateType, Array<TodolistDomainType>>(
     (state) => state.todolists
   );

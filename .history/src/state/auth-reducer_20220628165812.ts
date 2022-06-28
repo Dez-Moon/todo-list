@@ -59,7 +59,6 @@ export const logoutTC = () => (dispatch: Dispatch) => {
   authAPI
     .logout()
     .then((res) => {
-      debugger;
       if (res.data.resultCode === 0) {
         dispatch(setIsLoggedInAC({ value: false }));
         dispatch(setAppStatusAC({ status: "succeeded" }));

@@ -105,7 +105,7 @@ const slice = createSlice({
     });
   },
 });
-export const {
+const {
   setTasksAC,
   removeTaskAC,
   addTaskAC,
@@ -120,7 +120,6 @@ export const fetchTasksTC = (todolistId: string) => {
     tasksAPI
       .getTasks(todolistId)
       .then((res) => {
-        debugger;
         const tasks = res.data.items;
         const action = setTasksAC({ tasks, todolistId, entityStatus: "idle" });
         dispatch(action);

@@ -99,13 +99,14 @@ const slice = createSlice({
       delete state[action.payload.id];
     });
     builder.addCase(setTodolistsAC, (state, action) => {
+      debugger;
       action.payload.todolists.forEach((tl: any) => {
         state[tl.id] = [];
       });
     });
   },
 });
-export const {
+const {
   setTasksAC,
   removeTaskAC,
   addTaskAC,
@@ -113,14 +114,12 @@ export const {
   changeTaskEntityStatusAC,
 } = slice.actions;
 export const tasksReducer = slice.reducer;
-
 export const fetchTasksTC = (todolistId: string) => {
   return (dispatch: Dispatch) => {
     dispatch(setAppStatusAC({ status: "loading" }));
     tasksAPI
       .getTasks(todolistId)
       .then((res) => {
-        debugger;
         const tasks = res.data.items;
         const action = setTasksAC({ tasks, todolistId, entityStatus: "idle" });
         dispatch(action);

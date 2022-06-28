@@ -92,6 +92,7 @@ const slice = createSlice({
       state,
       action: PayloadAction<{ todolists: Array<TodolistType> }>
     ) {
+      debugger;
       return action.payload.todolists.map((tl) => ({
         ...tl,
         filter: "all",
@@ -109,7 +110,6 @@ export const {
   changeTodolistTitleAC,
   changeTodolistEntityStatusAC,
 } = slice.actions;
-
 export const fetchTodolistsTC = () => {
   return (dispatch: Dispatch) => {
     dispatch(setAppStatusAC({ status: "loading" }));
@@ -147,6 +147,7 @@ export const deleteTodolistTC = (todolistId: string) => {
 };
 export const addTodolistTC = (title: string) => {
   return (dispatch: Dispatch) => {
+    debugger;
     dispatch(setAppStatusAC({ status: "loading" }));
     todolistAPI
       .createTodoList(title)

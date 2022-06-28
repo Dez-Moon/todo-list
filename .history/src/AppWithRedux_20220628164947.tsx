@@ -73,7 +73,7 @@ function AppWithRedux() {
             <Menu />
           </IconButton>
           <Typography variant='h6'>News</Typography>
-          {isLogedIn ? (
+          {!isLogedIn ? (
             <Button color='inherit' onClick={() => thunk(dispatch)}>
               Log out
             </Button>

@@ -105,7 +105,7 @@ const slice = createSlice({
     });
   },
 });
-export const {
+const {
   setTasksAC,
   removeTaskAC,
   addTaskAC,

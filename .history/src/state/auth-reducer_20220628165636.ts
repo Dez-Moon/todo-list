@@ -44,10 +44,11 @@ export const initializeAppTC = () => {
     authAPI
       .me()
       .then((res) => {
+        debugger;
+        dispatch(setAppInitializedAC({ value: true }));
         if (res.data.resultCode === 0) {
           dispatch(setIsLoggedInAC({ value: true }));
         }
-        dispatch(setAppInitializedAC({ value: true }));
       })
       .catch((error) => {
         handleServerNetworkError(error, dispatch);
@@ -59,7 +60,6 @@ export const logoutTC = () => (dispatch: Dispatch) => {
   authAPI
     .logout()
     .then((res) => {
-      debugger;
       if (res.data.resultCode === 0) {
         dispatch(setIsLoggedInAC({ value: false }));
         dispatch(setAppStatusAC({ status: "succeeded" }));

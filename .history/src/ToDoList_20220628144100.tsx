@@ -106,14 +106,15 @@ const ToDoList = React.memo((props: PropsType) => {
         disabled={props.todolist.entityStatus === "loading"}
       />
       <div>
-        {taskForToDoList.map((task) => (
-          <Task
-            todolistId={props.todolist.id}
-            task={task}
-            key={task.id}
-            entityStatus={task.entityStatus}
-          />
-        ))}
+        {taskForToDoList &&
+          taskForToDoList.map((task) => (
+            <Task
+              todolistId={props.todolist.id}
+              task={task}
+              key={task.id}
+              entityStatus={task.entityStatus}
+            />
+          ))}
       </div>
       <div>
         <Button
