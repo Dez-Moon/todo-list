@@ -1,5 +1,4 @@
 import axios from "axios";
-import { RequestStatusType } from "../state/app-reducer";
 import { ResponseType } from "./todolist-api";
 
 const instance = axios.create({
