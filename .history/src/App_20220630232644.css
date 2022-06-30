@@ -44,10 +44,6 @@ body .MuiContainer-root {
   width: 200px
 }
 
-body.dark .MuiTextField-root input{
-  color: white
-}
-
-body.dark .MuiFormLabel-root {
+body.dark .MuiTextField-root {
   color: white
 }

@@ -44,10 +44,11 @@ body .MuiContainer-root {
   width: 200px
 }
 
-body.dark .MuiTextField-root input{
-  color: white
+body.dark .MuiTextField-root {
+  border: 1px solid white;
+  border-radius: 4px
 }
-
-body.dark .MuiFormLabel-root {
-  color: white
+body.dark .MuiTextField-root:active {
+  border: 1px solid red;
+  border-radius: 4px
 }

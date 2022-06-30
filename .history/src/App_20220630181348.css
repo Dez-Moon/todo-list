@@ -30,11 +30,10 @@ h3 {
     --font-weight: 500;
   }
   body.dark .MuiPaper-root {
-    background-color: rgb(26, 57, 87);
-    color: white
+    background-color: rgb(26, 57, 87)
   }
 body.dark .MuiToolbar-root {
-  color: white
+  color: black
 }
 body .MuiContainer-root {
   max-width: 1300px
@@ -43,11 +42,5 @@ body .MuiContainer-root {
  @media(max-width: 400) {
   width: 200px
 }
+  
 
-body.dark .MuiTextField-root input{
-  color: white
-}
-
-body.dark .MuiFormLabel-root {
-  color: white
-}

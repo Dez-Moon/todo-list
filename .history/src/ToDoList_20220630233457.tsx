@@ -144,7 +144,7 @@ const ToDoList = React.memo((props: PropsType) => {
           <Button
             variant={props.todolist.filter === "all" ? "contained" : "text"}
             onClick={onAllClickHandler}
-            color='secondary'
+            color='info'
           >
             All
           </Button>

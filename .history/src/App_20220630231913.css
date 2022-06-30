@@ -43,11 +43,7 @@ body .MuiContainer-root {
  @media(max-width: 400) {
   width: 200px
 }
-
-body.dark .MuiTextField-root input{
+body .MuiTextField-root:placeholder {
   color: white
 }
 
-body.dark .MuiFormLabel-root {
-  color: white
-}
