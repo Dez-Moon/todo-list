@@ -6,7 +6,7 @@ import {
 } from "./../utils/error-utils";
 import { Dispatch } from "redux";
 import { todolistAPI } from "../api/todolist-api";
-import { FilterValuesType, TodolistType } from "../App";
+import { FilterValuesType, TodolistType } from "../AppWithRedux";
 import { RequestStatusType, setAppStatusAC } from "./app-reducer";
 
 export type RemoveToDoListActionType = {
